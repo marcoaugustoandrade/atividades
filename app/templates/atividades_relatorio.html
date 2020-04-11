@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+
+        <h2>Relatório das atividades complementares</h2>
+        <p>Aluno: José Oliveira</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Tipo de atividade</th>
+                    <th>Carga horária total</th>
+                    <th>Carga horária considerada</th>
+                </tr>
+            </thead>
+            <thbody>
+                <tr>
+                    <td>Ensino</td>
+                    <td>70</td>
+                    <td>40</td>
+                </tr>
+            </thbody>
+        </table>
+
+        <h3>Resumo</h3>
+        <ul>
+            <li>Carga horária total: <b>120 horas</b></li>
+            <li>Carga horária considerada: <b>100 horas</b></li>
+        </ul>
+
+        <h3>Lista de atividades complementares</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Carga horária</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <thbody>
+                <tr>
+                    <td>Oficina GitHub</td>
+                    <td>Ensino</td>
+                    <td>10/02/2018</td>
+                    <td>40</td>
+                    <td><a href="/atividades/1" class="btn btn-primary">Visualizar</a></td>
+                </tr>
+            </thbody>
+        </table>
+
+        <div>Declaramos que o aluno José Oliveira cumpriu a carga horária de atividades complementares de 100 horas.</div>
+
+    </div>
+</body>
+</html>

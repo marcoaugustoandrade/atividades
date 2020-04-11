@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+
+        <h2>Painel do usuário</h2>
+        
+        <div class="alert alert-danger tex-center">Dados inválidos</div>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" value="">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" value="">
+            </div>
+            <div class="form-group">
+                <label for="senha-atual">Senha atual:</label>
+                <input type="password" class="form-control" id="senha-atual" name="senha-atual">
+            </div>
+            <div class="form-group">
+                <label for="senha-nova">Nova senha:</label>
+                <input type="password" class="form-control" id="senha-nova" name="senha-nova">
+            </div>
+            <div class="form-group">
+                <label for="senha-nova-repetir">Repetir nova senha:</label>
+                <input type="password" class="form-control" id="senha-nova-repetir" name="senha-nova-repetir">
+            </div>
+            <input type="submit" class="btn btn-success" value="Alterar">
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+
+        <div class="d-flex justify-content-between pb-4">
+            <h2>Cadastrar nova atividade complementar</h2>
+            <div><a href="/atividades" class="btn btn-success">Listar</a></div>
+        </div>
+        
+        <form class="form" method="post" action="/atividades/nova" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" value="">
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select class="form-control" id="tipo" name="tipo">
+                    <option value="Ensino">Ensino</option>
+                    <option value="Pesquisa">Pesquisa</option>
+                    <option value="Extensão" >Extensão</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" class="form-control" id="data" name="data" value="">
+            </div>
+            <div class="form-group">
+                <label for="carga_horaria">Carga horária:</label>
+                <input type="number" class="form-control" id="carga_horaria" name="carga_horaria" value="">
+            </div>
+            <div class="form-group">
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" class="form-control" id="arquivo" name="arquivo">
+            </div>
+            <input type="submit" class="btn btn-success" value="Cadastrar">
+        </form>
+
+    </div>
+</body>
+</html>

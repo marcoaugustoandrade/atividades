@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+
+        <div class="d-flex">
+            <div class="flex-grow-2">
+                <h2>Atividades complementares do CST em ADS</h2>
+                <p>Categorias das atividades complementares:</p>
+                <p><b>Ensino:</b></p>
+                <ul>
+                    <li>Disciplinas regulares oferecidas em cursos do IFRO ou por outras Instituições de Ensino Superior desde que  relacionadas ao perfil profissional de formação;</li>
+                    <li>Desenvolvimento de atividades de Monitoria de Ensino, em disciplinas teórico/práticas;</li>
+                    <li>Práticas complementares ao ensino desde que relacionadas ao perfil profissional de formação.</li>
+                </ul>
+                <p><b>Extensão:</b></p>
+                <ul>
+                    <li>Participação em eventos: seminários, congressos, palestras, cursos, semanas acadêmicas, conferências, oficinas e outros.</li>
+                    <li>Atividades de Intercâmbio;</li>
+                    <li>Organização de eventos de extensão;</li>
+                    <li>Estágio extracurricular remunerado ou não;</li>
+                    <li>Participação em cursos de extensão universitária no IFRO ou em outras instituições de ensino superior;</li>
+                    <li>Atuação como instrutor/monitor em cursos de extensão universitária.</li>
+                </ul>
+                <p><b>Pesquisa:</b></p>
+                <ul>
+                    <li>Participação em atividades de iniciação científica;</li>
+                    <li>Organização de eventos de pesquisa;</li>
+                    <li>Apresentação de trabalhos em eventos científicos com publicação em anais;</li>
+                    <li>Participação em grupos de pesquisa relacionadas ao perfil de formação no IFRO ou em outras instituições;</li>
+                    <li>Apresentação de resumo científico em eventos técnicos­científicos, nesta ou em outras instituições;</li>
+                    <li>Publicação de artigos, resumos científicos em revistas indexadas;</li>
+                </ul>
+                <p>Participação em órgãos colegiados, entre os quais a representação estudantil em cargos eletivos do Diretório  Acadêmico do Curso e Diretório Central dos Estudantes</p>
+                <p>Viagem de estudos organizada pelo IFRO, com autorização prévia do coordenador de curso e que não estejam  contempladas nas disciplinas;</p>
+            </div>
+            
+            <div class="flex-grow-2" style="min-width: 400px">
+                <h2 class="text-center">Login</h2>
+                <form class="form" method="post" action="/login">
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" class="form-control" id="senha" name="senha">
+                    </div>
+                    <input type="submit" class="btn btn-success btn-block" value="Login">
+                </form>
+                <div class="text-center mt-2">
+                    <a href="/esqueci-minha-senha">Esqueci minha senha</a>
+                    <a href="/usuarios/novo" class="btn btn-warning mt-2 btn-block">Criar conta</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+
+        <div class="d-flex justify-content-between pb-4">
+            <h2>Minhas atividades complementares</h2>
+            <div><a href="/atividades/nova" class="btn btn-success">Nova</a></div>
+        </div>
+
+        <div class="alert alert-danger">Nenhuma atividade complementar cadastrada!</div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Carga Horária</th>
+                    <th>Avaliada</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Oficina GitHub</td>
+                    <td>Ensino</td>
+                    <td>10/10/2019</td>
+                    <td>4</td>
+                    <td>Não</td>
+                    <td><a href="/atividades/1" class="btn btn-primary">Detalhar</a></td>
+                    <td><a href="/atividades/alterar/1" class="btn btn-warning">Alterar</a></td>
+                    <td><a href="/atividades/deletar/1" class="btn btn-danger">Deletar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

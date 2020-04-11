@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividades complementares</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .menu a, .menu a:visited{
+            color: #FFF;
+        }
+        .menu a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <div class="bg-dark text-white pt-2 pb-2">
+        <div class="container d-flex justify-content-between align-items-center menu">
+            <h1><a href="/">SGAC</a></h1>
+            <div class="link-menu">
+                <nav>
+                    <a href="/atividades">Minhas atividades</a> | <a href="/relatorio">Relatório</a> | <a href="/logout">Sair</a>
+                    <a href="/perfil"><img src="assets/images/usuario.jpg" alt="Nome do usuário" width="30" height="30" style="border-radius: 50%;"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <h2>Detalhe da atividade Oficina GitHub</h2>
+        <ul>
+            <li>Tipo: <b>Ensino</b></li>
+            <li>Data: <b>10/10/2019</b></li>
+            <li>Carga horária: <b>4</b></li>
+            <li>Avaliada: <b>Não</b></li>
+        </ul>
+
+        <form class="form-inline mb-4" method="post" action="/avaliar">
+            <div class="form-group">
+                <span>A atividade está de acordo?</span>
+                <input type="hidden" id="id" name="id" value="1">
+                <input type="radio" id="sim" name="avaliacao" class="ml-3">
+                <label for="sim" class="ml-1">sim</label>
+                <input type="radio" id="nao" name="avaliacao" class="ml-3">
+                <label for="nao" class="ml-1">não</label>
+            </div>
+            <input type="submit" class="btn btn-primary ml-3" value="Avaliar">
+        </form>
+
+        <div>
+            <object data="/static/uploads/1/3724759435.pdf" type="application/pdf" width="100%" height="500px">
+                <embed src="/static/uploads/1/3724759435.pdf" type="application/pdf" />
+            </object>
+        </div>
+    </div>
+    
+</body>
+</html>

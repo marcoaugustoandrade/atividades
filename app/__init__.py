@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -6,4 +7,5 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-    return "<h1>Página inicial</h1>"
+    a = ['Semana ADS', 'Semana de Tecnologia', 'EIIFRO']
+    return render_template("index.html", atividades=a)
